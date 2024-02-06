@@ -1,3 +1,5 @@
-import { server } from "./server/server";
+import { server } from './server/Server';
 
-server.listen(3000,() => console.log('servidor rodando na porta 3000'))
+server.listen(process.env.PORT, () => {
+  console.log('servidor rodando na porta ' + process.env.PORT);
+});
